@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary color of the app (shown in the app bar) -->
+    <color name="primary_color">#009688</color>
+
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="primary_dark_color">#00695C</color>
+
+    <!-- Background color for app -->
+    <color name="teal_background">#00BFA5</color>
+
+    <!-- Background color for the classical category -->
+    <color name="category_classical">#00796B</color>
+
+    <!-- Background color for the country category -->
+    <color name="category_country">#00695C</color>
+
+    <!-- Background color for the disco category -->
+    <color name="category_disco">#00796B</color>
+
+    <!-- Background color for the pop category -->
+    <color name="category_pop">#00695C</color>
+
+    <!-- Background color for the Rock category -->
+    <color name="category_rock">#00796B</color>
+
+    <!-- Background color for the Pages category -->
+    <color name="page_color">#64FFDA</color>
+    <!-- Text color for the play now page -->
+    <color name="play_text_page">#000000</color>
+</resources>

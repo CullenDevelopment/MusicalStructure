@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cullendevelopment.android.musicalstructure">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/music_notes"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/music_notes"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Classical Music Activity -->
+        <activity
+            android:name=".ClassicalActivity"
+            android:label="@string/category_classical"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <!-- Country Music Activity -->
+        <activity
+            android:name=".CountryActivity"
+            android:label="@string/category_country"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <!-- Disco Music Activity -->
+        <activity
+            android:name=".DiscoActivity"
+            android:label="@string/category_disco"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <!-- Pop Music Activity -->
+        <activity
+            android:name=".PopActivity"
+            android:label="@string/category_pop"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <!-- Rock Music Activity -->
+        <activity
+            android:name=".RockActivity"
+            android:label="@string/category_rock"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <!-- Activity for the Playing now activity-->
+        <activity
+            android:name=".PlayActivity"
+            android:label="PlayActivity">
+        </activity>
+
+
+
+    </application>
+
+</manifest>

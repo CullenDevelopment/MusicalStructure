@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_background"
+    android:orientation="vertical"
+    tools:context="com.cullendevelopment.android.musicalstructure.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height"
+            android:src="@drawable/music_app"/>
+
+
+        <TextView
+            android:id="@+id/classical"
+            style="@style/CategoryStyle"
+            android:background="@color/category_classical"
+            android:text="@string/category_classical" />
+
+        <TextView
+            android:id="@+id/country"
+            style="@style/CategoryStyle"
+            android:background="@color/category_country"
+            android:text="@string/category_country" />
+
+        <TextView
+            android:id="@+id/disco"
+            style="@style/CategoryStyle"
+            android:background="@color/category_disco"
+            android:text="@string/category_disco" />
+
+        <TextView
+            android:id="@+id/pop"
+            style="@style/CategoryStyle"
+            android:background="@color/category_pop"
+            android:text="@string/category_pop" />
+
+        <TextView
+            android:id="@+id/rock"
+            style="@style/CategoryStyle"
+            android:background="@color/category_rock"
+            android:text="@string/category_rock" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+

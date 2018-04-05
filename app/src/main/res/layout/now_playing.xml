@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/teal_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/playing_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/playing_now"
+        android:textSize="@dimen/playing_now_text"
+        android:textColor="@color/play_text_page"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        />
+
+    <ImageView
+        android:id="@+id/music_image"
+        android:layout_width="@dimen/playing_now_image_size"
+        android:layout_height="@dimen/playing_now_image_size"
+        android:src="@drawable/music_notes"
+        android:padding= "@dimen/playing_now_image_padding"
+        android:layout_below="@id/playing_now"
+        tools:ignore="ContentDescription"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artist"
+        android:textSize="@dimen/playing_now_artist"
+        android:textColor="@color/play_text_page"
+        android:layout_below="@id/music_image"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        />
+
+    <TextView
+        android:id="@+id/track_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/track"
+        android:textColor="@color/play_text_page"
+        android:textSize="@dimen/playing_now_track"
+        android:layout_below="@id/artist_name"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+       />
+</RelativeLayout>

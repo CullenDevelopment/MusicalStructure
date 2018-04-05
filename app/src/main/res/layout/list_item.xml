@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/default_padding">
+
+    <ImageView
+        android:id="@+id/list_item_icon"
+        android:layout_width="@dimen/image_dimensions"
+        android:layout_height="@dimen/image_dimensions"
+        android:src="@drawable/music_notes" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/artist_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/list_view_text_one"
+            android:textStyle="bold"
+            tools:text="@string/artist" />
+
+
+        <TextView
+            android:id="@+id/track_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/list_view_text_two"
+            tools:text="@string/track" />
+
+    </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/play_icon"
+            android:layout_width="@dimen/image_dimensions"
+            android:layout_height="@dimen/image_dimensions"
+            android:src="@drawable/play_button" />
+
+
+</LinearLayout>
