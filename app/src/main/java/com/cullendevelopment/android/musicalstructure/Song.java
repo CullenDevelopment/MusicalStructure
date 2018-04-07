@@ -17,7 +17,7 @@ public class Song{
     // Drawable resource ID
     private int mImageResourceId;
 
-    // Constructor for the list items in the Word ArrayList
+    // Constructor for the list items in the Song ArrayList
     public Song(String artistTranslation, String trackTranslation, int playImage) {
         mArtistName = artistTranslation;
         mTrackName = trackTranslation;
@@ -29,7 +29,7 @@ public class Song{
      */
     public String getArtistName() {
 
-        return mArtistName; // Returns each version of the Artist in Word Arraylist object
+        return mArtistName; // Returns each version of the Artist in Song Arraylist object
     }
 
     /**
@@ -37,7 +37,7 @@ public class Song{
      */
     public String getTrackName() {
 
-        return mTrackName; //  Returns each version of the track in Word Arraylist object
+        return mTrackName; //  Returns each version of the track in Song Arraylist object
     }
 
     /**
@@ -46,7 +46,7 @@ public class Song{
     public int getPlayImage() {
 
         return mImageResourceId;
-        //returns the image resource associated with each Word Arraylist object
+        //returns the image resource associated with each Song Arraylist object
     }
 }
 

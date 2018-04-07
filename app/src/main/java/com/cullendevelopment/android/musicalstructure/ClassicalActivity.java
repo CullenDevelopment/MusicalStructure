@@ -15,10 +15,10 @@ public class ClassicalActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //Layout for the word list
+        //Layout for the song list
         setContentView(R.layout.song_list);
 
-        // Create a list of words
+        // Create a list of songs/Music
         ArrayList<Song> songs = new ArrayList<Song>();
         songs.add(new Song("Vaughan Williams", "The Lark Ascending", R.drawable.music_notes));
         songs.add(new Song("Pachelbel", "Canon in D, P.37", R.drawable.music_notes));
@@ -31,7 +31,7 @@ public class ClassicalActivity extends AppCompatActivity {
         songs.add(new Song("Elgar", "The Enigma Variations - Nimrod", R.drawable.music_notes));
         songs.add(new Song("Vivaldi", "THe Four Seasons - Spring", R.drawable.music_notes));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // Create an {@link SongAdapter}, whose data source is a list of {@link Song}s. The
         // adapter knows how to create list items for each item in the list.
         SongAdapter adapter =
                 new SongAdapter(this, songs);
@@ -41,8 +41,8 @@ public class ClassicalActivity extends AppCompatActivity {
         // song_list.xml file.
         ListView listView = findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
+        // Make the {@link ListView} use the {@link SongAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link Song} in the list.
         listView.setAdapter(adapter);
 
         // Find the View that shows the play now button
@@ -53,7 +53,7 @@ public class ClassicalActivity extends AppCompatActivity {
             // The code in this method will be executed when the phrases category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link PopActivity}
+                // Create a new intent to open the {@link PlayActivity}
                 Intent playIntent = new Intent(ClassicalActivity.this, PlayActivity.class);
 
                 // Start the new activity - opens up "Playing now" Activity view.

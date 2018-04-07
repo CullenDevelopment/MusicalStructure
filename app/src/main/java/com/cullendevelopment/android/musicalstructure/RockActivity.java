@@ -17,7 +17,7 @@ public class RockActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.song_list);
 
-        // Create a list of words
+        // Create a list of songs/Music
         ArrayList<Song> songs = new ArrayList<Song>();
         songs.add(new Song("Queen", "We Will Rock You", R.drawable.music_notes));
         songs.add(new Song("Bryan Adams", "Summer Of '69", R.drawable.music_notes ));
@@ -30,7 +30,7 @@ public class RockActivity extends AppCompatActivity {
         songs.add(new Song("Robert Palmer", "Addicted To Love", R.drawable.music_notes));
         songs.add(new Song("Meatloaf", "Bat Out Of Hell", R.drawable.music_notes));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // Create an {@link SongAdapter}, whose data source is a list of {@link Song}s. The
         // adapter knows how to create list items for each item in the list.
         SongAdapter adapter =
                 new SongAdapter(this, songs);
@@ -40,8 +40,8 @@ public class RockActivity extends AppCompatActivity {
         // song_list.xml file.
         ListView listView =findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
+        // Make the {@link ListView} use the {@link SongAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link Song} in the list.
         listView.setAdapter(adapter);
 
         // Find the View that shows the Now Playing button

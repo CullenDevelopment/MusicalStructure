@@ -68,7 +68,7 @@
         <!-- Activity for the Playing now activity-->
         <activity
             android:name=".PlayActivity"
-            android:label="PlayActivity">
+            android:label="@string/play_activity_label">
         </activity>
 
 

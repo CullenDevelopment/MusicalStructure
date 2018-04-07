@@ -1,19 +1,14 @@
 <resources>
     <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">Music Player</string>
-
     <!-- Category name for phrases [CHAR LIMIT=20] -->
     <string name="category_pop">Pop</string>
-
     <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
     <string name="category_country">Country</string>
-
     <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
     <string name="category_classical">Classical</string>
-
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
     <string name="category_disco">Disco</string>
-
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
     <string name="category_rock">Rock</string>
     <!-- placeholders names for list_view layout -->
@@ -21,7 +16,6 @@
     <string name="track">Track</string>
     <!-- Playing Now text -->
     <string name="playing_now">Playing Now</string>
-
-
-
+    <!-- Play Activity label -->
+    <string name="play_activity_label">PlayActivity</string>
 </resources>

@@ -5,16 +5,36 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Now Playing Image height. -->
     <dimen name="image_height">247dp</dimen>
+    <!-- list_item Image dimensions - square -->
     <dimen name="image_dimensions">72dp</dimen>
+    <!-- Standard amount of padding used in XML layouts. -->
     <dimen name="default_padding">16dp</dimen>
+    <!-- Standard amount of margin used in XML layouts. -->
     <dimen name="default_margin">16dp</dimen>
+    <!-- Text size of line one in List_item xml. -->
     <dimen name="list_view_text_one">20sp</dimen>
+    <!-- Text size of line two in List_item xml. -->
     <dimen name="list_view_text_two">16sp</dimen>
+    <!-- Text size of line one in Playing Now activity PLayActivity-->
     <dimen name="playing_now_text">42sp</dimen>
+    <!-- Text size of line two in Playing Now activity PLayActivity after Image-->
     <dimen name="playing_now_artist">42sp</dimen>
+    <!-- Text size of line three in Playing Now activity PLayActivity-->
     <dimen name="playing_now_track">36sp</dimen>
+    <!-- Diameter of image -round - in Playing Now activity PLayActivity after Image-->
     <dimen name="playing_now_image_size">180dp</dimen>
+    <!-- Button margin in Playing Now activity PLayActivity-->
     <dimen name="playing_now_button_margin">16dp</dimen>
+    <!-- Button margin in song_list xml layout-->
     <dimen name="list_button_margin">8dp</dimen>
+    <!-- Activity change Button height in Playing Now activity PLayActivity-->
+    <dimen name="play_button_height">42dp</dimen>
+    <!-- Activity change Button height in Playing Now activity PLayActivity-->
+    <dimen name="play_button_width">80dp</dimen>
+    <!-- Activity change Button width in song_list activities-->
+    <dimen name="song_list_buttons_width">60dp</dimen>
+    <!-- Activity change Button height in song_list activities-->
+    <dimen name="song_list_buttons_height">30dp</dimen>
 </resources>
