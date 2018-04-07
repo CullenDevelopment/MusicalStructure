@@ -1,6 +1,6 @@
 package com.cullendevelopment.android.musicalstructure;
 
-public class Word {
+public class Song{
 
     /**
      * private string value
@@ -15,10 +15,10 @@ public class Word {
     private String mTrackName;
 
     // Drawable resource ID
-     private int mImageResourceId;
+    private int mImageResourceId;
 
-   // Constructor for the list items in the Word ArrayList
-    public Word(String artistTranslation, String trackTranslation, int playImage) {
+    // Constructor for the list items in the Word ArrayList
+    public Song(String artistTranslation, String trackTranslation, int playImage) {
         mArtistName = artistTranslation;
         mTrackName = trackTranslation;
         mImageResourceId = playImage;
@@ -49,6 +49,5 @@ public class Word {
         //returns the image resource associated with each Word Arraylist object
     }
 }
-
 
 

@@ -14,29 +14,29 @@ public class PopActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.word_list);
+        setContentView(R.layout.song_list);
 
         // Create a list of words
-        ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("Rita Ora", "Your Song", R.drawable.music_notes));
-        words.add(new Word("One Direction", "History", R.drawable.music_notes));
-        words.add(new Word("Train", "Play That Song", R.drawable.music_notes));
-        words.add(new Word("Duo Lipa", "Be The One", R.drawable.music_notes));
-        words.add(new Word("Sia", "The Greatest", R.drawable.music_notes));
-        words.add(new Word("Bruno Mars", "24K Magic", R.drawable.music_notes));
-        words.add(new Word("Galantis", "No Money", R.drawable.music_notes));
-        words.add(new Word("Disciples", "On My Mind", R.drawable.music_notes));
-        words.add(new Word("Louisa Johnson", "Best Behaviour", R.drawable.music_notes));
-        words.add(new Word("Fleur East", "Sax", R.drawable.music_notes));
+        ArrayList<Song> songs = new ArrayList<Song>();
+        songs.add(new Song("Rita Ora", "Your Song", R.drawable.music_notes));
+        songs.add(new Song("One Direction", "History", R.drawable.music_notes));
+        songs.add(new Song("Train", "Play That Song", R.drawable.music_notes));
+        songs.add(new Song("Duo Lipa", "Be The One", R.drawable.music_notes));
+        songs.add(new Song("Sia", "The Greatest", R.drawable.music_notes));
+        songs.add(new Song("Bruno Mars", "24K Magic", R.drawable.music_notes));
+        songs.add(new Song("Galantis", "No Money", R.drawable.music_notes));
+        songs.add(new Song("Disciples", "On My Mind", R.drawable.music_notes));
+        songs.add(new Song("Louisa Johnson", "Best Behaviour", R.drawable.music_notes));
+        songs.add(new Song("Fleur East", "Sax", R.drawable.music_notes));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
-        WordAdapter adapter =
-                new WordAdapter(this, words);
+        SongAdapter adapter =
+                new SongAdapter(this, songs);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // word_list.xml file.
+        // song_list.xml file.
         ListView listView = findViewById(R.id.list);
 
         // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
@@ -57,6 +57,92 @@ public class PopActivity extends AppCompatActivity {
 
                 // Start the new activity - opens up "Playing now" Activity view.
                 startActivity(playIntent);
+            }
+        });
+
+        // Find the View that shows the playing now home button
+        ImageView listHome = findViewById(R.id.list_home_button);
+
+        // Set a click listener on that View
+        listHome.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the home button is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link MainActivity}
+                Intent listHomeIntent = new Intent(PopActivity.this, MainActivity.class);
+                // Start the new activity
+                startActivity(listHomeIntent); // opens up the Home/Main Page Activity
+            }
+        });
+
+        // Find the View that shows the playing now Classical Activity button
+        ImageView listClassical = findViewById(R.id.list_classical_button);
+
+        // Set a click listener on that View
+        listClassical.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the home button is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link ClassicalActivity}
+                Intent listClassicalIntent = new Intent(PopActivity.this, ClassicalActivity.class);
+
+                // Start the new activity
+                startActivity(listClassicalIntent); // opens up the Classical Activity
+            }
+        });
+
+        // Find the View that shows the song list Country Activity button
+        ImageView listCountry = findViewById(R.id.list_country_button);
+
+        // Set a click listener on that View
+        listCountry.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the home button is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link CountryActivity}
+                Intent listCountryIntent = new Intent(PopActivity.this, CountryActivity.class);
+
+                // Start the new activity
+                startActivity(listCountryIntent); // opens up the Country Activity
+            }
+        });
+
+        // Find the View that shows the song list Disco Activity button
+        ImageView listDisco = findViewById(R.id.list_disco_button);
+
+        // Set a click listener on that View
+        listDisco.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the home button is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link DiscoActivity}
+                Intent listDiscoIntent = new Intent(PopActivity.this, DiscoActivity.class);
+
+                // Start the new activity
+                startActivity(listDiscoIntent); // opens up the Disco Activity
+            }
+        });
+
+        // Find the View that shows the Pop Activity button in the song list activity
+        ImageView listPop = findViewById(R.id.list_pop_button);
+        //and hides it
+        listPop.setVisibility(View.GONE);
+
+
+
+        // Find the View that shows the playing now Rock Activity button
+        ImageView listRock = findViewById(R.id.list_rock_button);
+
+        // Set a click listener on that View
+        listRock.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the home button is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link RockActivity}
+                Intent listRockIntent = new Intent(PopActivity.this, RockActivity.class);
+
+                // Start the new activity
+                startActivity(listRockIntent); // opens up the Rock Activity
             }
         });
     }
